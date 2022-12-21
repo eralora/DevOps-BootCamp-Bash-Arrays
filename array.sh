@@ -34,7 +34,7 @@ for (( i=0; i < $arg; i++ )); do
 	
 done
 
-#Using Pattern substitution to adding comma between each arrays
+#Using Pattern substitution to adding comma between each arrays.
 result="${res[*]}"
 if [ $count -le 1 ]; then
 	echo "$count folder created: ${result//${IFS:0:1}/, }"
